@@ -1,0 +1,579 @@
+html,body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #eef;
+    
+}
+
+.phone-shape {
+    height:640px;
+    width:360px;;
+    padding: 0px;
+    margin: auto;
+    margin-top: 40px;
+    background:#111;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+   
+.wrapper {
+    overflow: auto; /* prevents top margin change on phone-shape from moving the entire wrapper*/
+    position: relative; 
+}
+
+.top-camera {
+    height: 4.5rem;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #111;
+    overflow: auto;
+
+}
+
+.top-camera > * {
+	display: inline-block;
+} 
+
+.screen {
+    height:31rem;
+    width: 340px;
+    margin: auto;
+    margin-left: 10px;
+    background: #222;
+}
+
+.bottom-control {
+    height: 4.9rem;
+    width: 100%;
+    padding: 0px;
+    background: #111;
+    
+}
+
+.second-button > * {
+    display: inline-block;
+}
+
+
+.camera {
+    display: inline-block;
+    border-radius: 30px;
+    background: #222;
+    height: 20px;
+    width: 20px;
+    margin: auto;
+    margin-left: 7.5rem;
+    margin-top: 1.5rem;
+    overflow: auto;
+    border: .5px solid #222;
+}
+
+.lense {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 25%;
+    background: #444;
+}
+
+.speaker {display: inline-block;
+    height: 10px;
+    width: 60px;
+    background: #333;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    border: 3px solid #222;
+    background-image: radial-gradient(black, transparent 40%);
+    background-size: 3px 3px;
+    
+}
+
+.sensor {
+    height: 20px;
+    width: 20px;
+    margin: auto;
+    padding: 0px;
+    display: inline-block;
+    margin-left: 4rem;
+    background: rgba(100%,0%,0%,0.08);
+    border-radius: 50%;
+    border: .5px solid #111;
+    position: relative;
+    overflow: auto;
+}
+
+.actual-sensor {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    margin-top: 25%;
+    background: black;
+    border-radius: 50%;
+}
+
+.round-thing {
+    height:12px;
+    width: 25px;
+    border-radius: 20px;
+    background: #222;
+    margin: auto;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.inscreen_header {
+    height: 60px;
+    width: 340px;
+    background: rgba(84%,33%,25%,1);
+    position: absolute;
+}
+
+.inscreen-body {
+    margin-top: 60px;
+    width: 340px;
+    background-color: #fff; 
+    height: Calc(490px - 4.9rem);
+    overflow: auto;
+    position: absolute;
+    z-index: 0;
+    
+}
+
+.inscreen-body img {
+	max-height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-top: .8rem;
+}
+
+.fake-mail {
+    overflow: auto;
+    display: block;
+}
+
+.screen > .inscreen_header > .inscreen-body > .fake-mail > li {
+    display: inline-block;
+    
+}
+
+.fake-mail > li > a {
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.box {
+    width: 33.33%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    color: white;
+    line-height: 70px;
+}
+
+
+.top2 {
+    width: 33.33%;
+    float: left;
+    height: 100%;
+    color: white;
+    margin: auto;
+    text-align: left;
+    line-height: 60px;
+    font-family: 'Open Sans';
+    padding-left: 1.7rem;   
+}
+
+.top2 > a {
+    text-decoration: none;
+    color: white;
+    font-family: Raleway;
+}
+
+#adjuster1 {
+    padding-right: 70px;
+}
+
+
+.boot {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 340px;
+    height: 31rem;
+    padding-top: 1rem;
+    background: #111;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    overflow: auto;
+    box-sizing: border-box;
+    display: block;
+    opacity: 0;
+    z-index: 0;
+    animation: animate 5s ease-in-out;
+}
+
+.boot > * {
+    line-height: 30px;
+}
+
+.boot h1 {
+    margin-top: 50%;
+    font-size: 2.5rem;
+    display: inline-block;
+}
+
+.top > span {
+    font-family:  'Open Sans';
+    margin-right: 90px;
+    margin-left: 0px;
+}
+
+.top1 > a{
+     width: 100%;
+    height: 100%;
+    float: left;
+    color: white;
+    line-height: 60px;
+    padding-left: 1rem;
+
+}
+
+.top3 {
+     width: 48%;
+    float: left;
+    height: 100%;
+    color: white;
+    margin: auto;
+    text-align: center;
+    line-height: 60px;
+}
+.top3 > * {
+    padding-left: 120px;
+}
+
+.display {
+    
+    -webkit-transform: perspective(1px) translateY(50%);
+    -ms-transform: perspective(1px) translateY(50%);
+    transform: perspective(1px) translateY(50%);
+}
+
+.mail {
+    border-bottom: 1px solid #eee;
+    height:80px;
+    width: 100%;
+}
+
+.mail > * {
+    display:  inline-block;
+    
+}
+
+
+.inscreen-top {
+    padding-top:3px; 
+    height: 20px;
+    background: rgba(70%,24%,15%, 1);
+    z-index: 0;
+}
+
+.parts1, .parts2, .parts3 {
+    width: 8.33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    color: white;
+    
+}
+
+.parts4 {
+    height: 100%;
+    width: 36.65%;
+    float: left;
+}
+
+.parts5 {
+    width: 30.03%;
+    float: right;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.parts5 > i {
+    
+    color: white;
+}
+
+.parts5 > span {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    color: white;  
+}
+
+.x {
+    transform: rotateY(190deg);
+}
+
+.dp {
+    width: 50px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    display: inline;
+    
+}
+
+.sender {
+    height: 100%;
+    margin: auto;
+    width: calc(100% - 50px);
+    float: left;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.dp > img {
+    margin-top: 0.8rem;
+}
+
+.mail-subject {
+    height: 100%;
+    text-align: justify;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    margin-bottom
+}
+
+.sender > p {
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.sender-name {
+    padding-left: 10px;
+    padding-top: 14px;
+    font-family: Raleway;
+    font-weight: 100px;
+    font-size: 14px;
+    color: #111;
+    height: 20px;
+}
+
+.sender-name-read {
+padding-left: 10px;
+    padding-top: 14px;
+    font-family: Raleway;
+    font-size: 14px;
+    color: #111;
+    height: 20px;	
+}
+
+.sender-mail {
+    height: 27px;
+    float: left;
+    width: 87%;
+    padding-right: 15px;    
+    padding-left: 10px;
+    padding-top: 2px;
+    font-family: Roboto;
+    font-size: 12px;
+    color: #999;
+}
+
+.sender-subject {
+    height: 15px;
+    width: 100%;
+    margin-top: -.5em;
+    float: left;
+    padding-left: 10px;
+    padding-top: 2px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #333;
+}
+
+.sender-subject-read {
+    height: 15px;
+    width: 100%;
+    margin-top: -.5em;
+    float: left;
+    padding-left: 10px;
+    padding-top: 2px;
+    font-family: roboto;
+    font-size: 12px;
+    color: #999;
+}
+
+.name-left {
+    float: left;
+    width:70%;
+    height: 100%;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+
+.name-left-read {
+    float: left;
+    width:70%;
+    height: 100%;
+    font-family:roboto;
+    font-weight: lighter;
+    color: #111;
+}
+
+.name-right {
+    width: 20%;
+    float: right;
+    height: 100%;
+    text-align: right;
+    padding-right: 19px;
+    font-family: sans-serif;
+    color: rgba(5%,5%,100%,0.8);
+    font-size: 11px;
+    font-weight: 700;
+    padding-top: 4px;
+}   
+
+.name-right-read {
+    width: 20%;
+    float: right;
+    height: 100%;
+    text-align: right;
+    padding-right: 19px;
+    font-family: roboto;
+    color: #999;
+    font-size: 11px;
+    padding-top: 4px;
+}   
+
+.name-right-read > i {
+    color: black;
+}
+
+.brief {
+    height: 15px;
+    width: 83%;
+    
+    float: left;
+    padding-left: 10px;
+    padding-top: 2px;
+    font-family: Roboto;
+    font-size: 12px;
+    color: #999;
+}
+
+
+
+.mail-content {
+    padding-top: 25px;
+    height: 5px;
+    width: 100%;
+}
+
+.round-image-placeholder1 {
+    height: 40px;
+    width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-top: .8rem;
+    background: orange;
+    color: white;
+    margin-left: .4em;
+    font-family: Raleway;
+    line-height: 40px;
+}
+
+.round-image-placeholder2 {
+        height: 40px;
+    width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-top: .8rem;
+    background: lightpink;
+    color: white;
+    margin-left: .4em;
+    font-family: Raleway;
+    line-height: 40px;
+
+}
+
+.round-image-placeholder3 {
+    height: 40px;
+    width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-top: .8rem;
+    background: lightblue;
+    color: white;
+    margin-left: .4em;
+    font-family: Raleway;
+    line-height: 40px;
+
+}
+
+.round-image-placeholder4 {
+    height: 40px;
+    width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-top: .8rem;
+    background: lightgreen;
+    color: white;
+    margin-left: .4em;
+    font-family: Raleway;
+    line-height: 40px;
+}
+
+.compose-new {
+    height: 50px;
+    width: 50px;
+    background: rgba(90%,25%,20%,1);
+    position: absolute;
+    
+    border-radius: 50%;
+    
+    margin-top: -9em;
+    margin-left: 18em;
+    box-shadow: 2px 2px 10px 2px  rgba(0,0,0,0.4);
+}
+
+.compose-new > i {
+    color:white;
+    text-align: center;
+    margin: auto;
+    padding-left: 1.15em;
+    padding-top: 1rem;
+}
+
+.main {
+    height: 31rem;
+    width: 340px;
+}
+
+.top1 {
+    height: 100%;
+    width: calc(100% - 33.33% - 48% - 8.33%);
+    float: left;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    
+}
